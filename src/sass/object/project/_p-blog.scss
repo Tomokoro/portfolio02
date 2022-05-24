@@ -1,5 +1,8 @@
 @use "global" as *;
 
+.p-blog__title-wrap {
+    text-align: center;
+}
 
 .p-blog__title {
     display: inline-block;
@@ -25,4 +28,9 @@
         top: rem(-94);
         left: rem(-470);
     }
+}
+
+.p-blog__btn {
+    margin-top: rem(24);
+    text-align: center;
 }

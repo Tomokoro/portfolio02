@@ -1,5 +1,14 @@
 @use "global" as *;
 
+.p-news__inner {
+    padding-left: $padding-sp;
+    padding-right: $padding-sp;
+    @include mq('md') {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
 
 .p-news__category {
     display: inline-block;
@@ -8,6 +17,15 @@
     line-height: 1.42857;
     border: 1px solid $white;
     padding: rem(6) rem(22) rem(5);
+    margin-left: rem(32);
+}
+
+.p-news__text-wrap {
+    margin-top: rem(16);
+    @include mq('md') {
+        margin-top: initial;
+        margin-left: rem(60);
+    }
 }
 
 .p-news__date,
@@ -15,4 +33,13 @@
     font-size: rem(16);
     font-weight: $normal;
     line-height: 1.4375;
+}
+
+.p-news__btn {
+    text-align: center;
+    margin-top: rem(28);
+    @include mq('md') {
+        margin-top: initial;
+        margin-left: rem(48);
+    }
 }

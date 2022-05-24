@@ -4,6 +4,7 @@
 .p-works__title {
     display: inline-block;
     position: relative;
+    text-align: center;
 }
 
 .p-works__title::before {
@@ -27,14 +28,35 @@
     }
 }
 
+.p-works__body {
+    padding-top: rem(24);
+    padding-bottom: rem(21);
+    padding-left: $padding-sp;
+    padding-right: $padding-sp;
+    background-color: $gray;
+}
+
+.p-works__head-wrap {
+    text-align: center;
+}
+
 .p-works__head {
     font-size: rem(20);
     line-height: 1.45;
     letter-spacing: 0.1em;
 }
 
+.p-works__text-wrap {
+    margin-top: rem(24);
+}
+
 .p-works__text {
     font-size: rem(16);
     line-height: 1.4375;
     letter-spacing: 0.125em
+}
+
+.p-works__btn {
+    text-align: center;
+    margin-top: rem(16);
 }

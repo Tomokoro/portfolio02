@@ -1,5 +1,8 @@
 @use "global" as *;
 
+.p-overview__title-wrap {
+    text-align: center;
+}
 
 .p-overview__title {
     display: inline-block;
@@ -27,14 +30,40 @@
     }
 }
 
+
+.p-overview__img {
+    margin-top: rem(48);
+}
+
+.p-overview__body {
+    padding-top: rem(24);
+    padding-bottom: rem(21);
+    padding-left: $padding-sp;
+    padding-right: $padding-sp;
+    background-color: $gray;
+}
+
+.p-overview__head-wrap {
+    text-align: center;
+}
+
 .p-overview__head {
     font-size: rem(20);
     line-height: 1.45;
     letter-spacing: 0.1em;
 }
 
+.p-overview__text-wrap {
+    margin-top: rem(24);
+}
+
 .p-overview__text {
     font-size: rem(16);
     line-height: 1.4375;
     letter-spacing: 0.125em
+}
+
+.p-overview__btn {
+    text-align: center;
+    margin-top: rem(16);
 }
