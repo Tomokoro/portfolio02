@@ -1,0 +1,18 @@
+@use "global" as *;
+
+
+.p-news__category {
+    display: inline-block;
+    font-size: rem(14);
+    font-weight: $normal;
+    line-height: 1.42857;
+    border: 1px solid $white;
+    padding: rem(6) rem(22) rem(5);
+}
+
+.p-news__date,
+.p-news__text {
+    font-size: rem(16);
+    font-weight: $normal;
+    line-height: 1.4375;
+}

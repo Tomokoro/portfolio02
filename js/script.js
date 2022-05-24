@@ -24,11 +24,11 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   });
 
   //ドロワーメニュー
-  $("#MenuButton").click(function () {
-    // $(".l-drawer-menu").toggleClass("is-show");
+  $(".js-hamburger").click(function () {
+    $(this).toggleClass("active");
     // $(".p-drawer-menu").toggleClass("is-show");
-    $(".js-drawer-open").toggleClass("open");
-    $(".drawer-menu").toggleClass("open");
+    $(".p-sp-nav").toggleClass("show");
+    $(".p-header__inner").toggleClass("active");
     $("html").toggleClass("is-fixed");
 
   });
@@ -47,4 +47,22 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     return false;
   });
 
+  // メインビュースライダー
+const swiper = new Swiper('.swiper', {
+    loop: true,
+    effect: "fade", //フェードの指定
+        autoplay: {
+            delay: 4000, //４秒後に次のスライドへ
+            disableOnInteraction: false //ユーザー側で操作してもスライドを止めない
+        },
+        speed: 2000, //２秒かけてフェードで切り替わる
+      direction:'vertical',
+      navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+      }
+    });
+
 });
+
+

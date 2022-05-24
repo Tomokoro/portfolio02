@@ -1,0 +1,40 @@
+@use "global" as *;
+
+
+.p-overview__title {
+    display: inline-block;
+    position: relative;
+}
+
+.p-overview__title::before {
+    display: inline-block;
+    content:"Overview";
+    font-family: $second-font-family;
+    font-size: rem(50);
+    font-weight: $normal;
+    color: $lightyellow;
+    opacity: 0.27;
+    line-height: 1.45;
+    letter-spacing: 0.04em;
+    position: absolute;
+    top: rem(-47);
+    left: rem(-85);
+    z-index: 1;
+    @include mq('md') {
+        font-size: rem(110);
+        top: rem(-94);
+        left: rem(-470);
+    }
+}
+
+.p-overview__head {
+    font-size: rem(20);
+    line-height: 1.45;
+    letter-spacing: 0.1em;
+}
+
+.p-overview__text {
+    font-size: rem(16);
+    line-height: 1.4375;
+    letter-spacing: 0.125em
+}

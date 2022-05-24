@@ -1,0 +1,35 @@
+@use "global" as *;
+
+
+.l-overview {
+    padding-top: rem(120);
+}
+
+.l-overview__title {
+    text-align: center;
+}
+
+.l-overview__img {
+    margin-top: rem(48);
+}
+
+.l-overview__body {
+    padding-top: rem(24);
+    padding-bottom: rem(21);
+    padding-left: $padding-sp;
+    padding-right: $padding-sp;
+    background-color: $gray;
+}
+
+.l-overview__head {
+    text-align: center;
+}
+
+.l-overview__text {
+    margin-top: rem(24);
+}
+
+.l-overview__btn {
+    text-align: center;
+    margin-top: rem(16);
+}

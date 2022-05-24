@@ -1,0 +1,16 @@
+@use "global" as *;
+
+
+.l-blog {
+    padding-top: rem(100);
+    padding-bottom: rem(120);
+}
+
+.l-blog__title {
+    text-align: center;
+}
+
+.l-blog__btn {
+    margin-top: rem(24);
+    text-align: center;
+}

@@ -1,0 +1,32 @@
+@use "global" as *;
+
+.l-contact {
+    padding-top: rem(67);
+    padding-bottom: rem(64);
+    padding-left: $padding-sp;
+    padding-right: $padding-sp;
+    @include mq('md') {
+        padding-top: rem(148);
+        padding-bottom: rem(148);
+    }
+}
+
+.l-contact__title {
+    text-align: center;
+
+}
+.l-contact__text {
+    margin-top: rem(20);
+    @include mq('md') {
+        text-align: center;
+        margin-top: rem(24);
+    }
+}
+
+.l-contact__btn {
+    text-align: center;
+    margin-top: rem(40);
+    @include mq('md') {
+        margin-top: rem(60);
+    }
+}

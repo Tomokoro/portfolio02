@@ -1,0 +1,38 @@
+@use "global" as *;
+
+.p-contact {
+    background-color: $lightgray;
+}
+
+.p-contact__title {
+    display: inline-block;
+    position: relative;
+}
+
+.p-contact__title::before {
+    display: inline-block;
+    content:"Contact";
+    font-family: $second-font-family;
+    font-size: rem(50);
+    font-weight: $normal;
+    color: $lightyellow;
+    opacity: 0.27;
+    line-height: 1.45;
+    letter-spacing: 0.04em;
+    position: absolute;
+    top: rem(-47);
+    left: rem(-36);
+    @include mq('md') {
+        font-size: rem(110);
+        top: rem(-94);
+        left: rem(-470);
+    }
+}
+
+.p-contact__text {
+    font-size: rem(16);
+    font-weight: $normal;
+    line-height: 1.4375;
+    letter-spacing: 0.125em;
+}
+

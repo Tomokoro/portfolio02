@@ -1,0 +1,21 @@
+@use "global" as *;
+
+
+.p-pc-nav__items {
+    display: flex;
+    align-items: center;
+}
+
+.p-pc-nav__item {
+    font-size: rem(16);
+    line-height: 2.1875;
+    letter-spacing: 0.125em;
+    font-weight: $normal;
+    color: $white;
+    padding: rem(9) rem(16);
+}
+
+.p-pc-nav__item:last-child {
+    color: $black;
+    background-color: rgba($color: $white, $alpha: 0.5);
+}

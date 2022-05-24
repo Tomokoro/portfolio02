@@ -1,0 +1,38 @@
+@use "global" as *;
+
+
+.p-sp-nav {
+    background-color: $black;
+    padding-top: rem(208);
+    padding-bottom: rem(208);
+    height: 100vh;
+    transform: translateX(100%);
+    transition: .3s;
+}
+
+
+.p-sp-nav__items {
+    text-align: center;
+    overflow-y: scroll;
+}
+
+.p-sp-nav__item {
+    color: $white;
+    font-size: rem(16);
+    font-weight: $normal;
+    line-height: 1.5;
+    letter-spacing: 0.125em;
+    padding-top: rem(16);
+    padding-bottom: rem(16);
+}
+
+.p-sp-nav__item a{
+    display: block;
+}
+
+
+// スマホナビが開いたとき
+.p-sp-nav.show {
+    transform: translateX(0);
+    transition: .3s;
+} 
