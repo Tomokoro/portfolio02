@@ -1,0 +1,50 @@
+@use "global" as *;
+
+.p-works-card__img {
+    display: block;
+    position: relative;
+    width: 100%;
+    @include mq('md') {
+        max-width: calc(50% - 44px / 2);
+    }
+}
+
+.p-works-card__category {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    right: 0;
+    background-color: $black;
+    font-size: rem(16);
+    line-height: 1.5;
+    letter-spacing: 0.125em;
+    padding: rem(8) rem(20);
+}
+
+.p-works-card__img + .p-works-card__img {
+    margin-top: rem(48);
+    @include mq('md') {
+        margin-top: initial;
+        margin-left: rem(44);
+    }
+}
+
+.p-works-card__img:nth-child(2n + 1) {   
+    @include mq("md") { 
+        margin-left: 0;
+    }
+}
+
+.p-works-card__img:nth-child(n + 3) {
+    @include mq("md") {       
+        margin-top: rem(114);
+    }
+}
+.p-works-card__title {
+    margin-top: rem(24);
+    text-align: center;
+    font-weight: 500;
+    font-size: rem(20);
+    line-height: 1.75;
+    letter-spacing: 0.1em;
+}

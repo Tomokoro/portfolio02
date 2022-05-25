@@ -284,6 +284,16 @@ select::-ms-expand {
   }
 }
 
+.l-works-contents {
+  margin-top: 85px;
+  margin-top: 5.3125rem;
+}
+@media screen and (min-width: 768px) {
+  .l-works-contents {
+    margin-top: 7.1875rem;
+  }
+}
+
 .l-works {
   margin-top: 120px;
   margin-top: 7.5rem;
@@ -1747,6 +1757,104 @@ select::-ms-expand {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   z-index: 1;
+}
+
+.p-works-card__img {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .p-works-card__img {
+    max-width: calc(50% - 22px);
+  }
+}
+
+.p-works-card__category {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 0.125em;
+  padding: 8px 20px;
+  padding: 0.5rem 1.25rem;
+}
+
+.p-works-card__img + .p-works-card__img {
+  margin-top: 48px;
+  margin-top: 3rem;
+}
+@media screen and (min-width: 768px) {
+  .p-works-card__img + .p-works-card__img {
+    margin-top: 0;
+    margin-top: initial;
+    margin-left: 2.75rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .p-works-card__img:nth-child(2n+1) {
+    margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .p-works-card__img:nth-child(n+3) {
+    margin-top: 7.125rem;
+  }
+}
+
+.p-works-card__title {
+  margin-top: 24px;
+  margin-top: 1.5rem;
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 1.75;
+  letter-spacing: 0.1em;
+}
+
+.p-works-contents__inner {
+  padding-bottom: 120px;
+  padding-bottom: 7.5rem;
+  max-width: 650px;
+  max-width: 40.625rem;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+  .p-works-contents__inner {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 9.375rem;
+    max-width: 1100px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .p-works-contents__cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.p-works-contents__pagenavi {
+  margin-top: 80px;
+  margin-top: 5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-works-contents__pagenavi {
+    margin-top: 6.5rem;
+  }
 }
 
 .p-works__title-wrap {
