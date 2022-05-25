@@ -1,0 +1,20 @@
+@use "global" as *;
+
+.p-sub-fv {
+    aspect-ratio: 375 / 425;
+    position: relative;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-position: center;
+    @include mq('md') {
+        aspect-ratio: 1280 / 370;
+    }
+}
+
+.p-sub-fv__title-wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}

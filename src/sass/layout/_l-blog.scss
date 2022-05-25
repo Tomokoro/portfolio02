@@ -2,8 +2,11 @@
 
 
 .l-blog {
-    padding-top: rem(100);
+    margin-top: rem(100);
     padding-bottom: rem(120);
+    @include mq('md') {
+        margin-top: rem(220);
+    }
 }
 
 

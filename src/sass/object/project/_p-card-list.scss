@@ -1,0 +1,45 @@
+@use "global" as *;
+
+
+.p-card-list__item {
+    display: block;
+    background-color: $white;
+    @include mq('md') {
+        max-width: calc(33.3333% - 24px * 2 / 3);
+        width: 100%;
+    }
+}
+
+.p-card-list__item + .p-card-list__item {  
+    margin-top: rem(24);
+    @include mq("md") {   
+        margin-top: initial;
+        margin-left: rem(24);
+    }
+}
+
+.p-card-list__item:nth-child(3n + 1) {   
+    @include mq("md") { 
+        margin-left: 0;
+    }
+}
+
+.p-card-list__item:nth-child(n + 4) {
+    @include mq("md") {       
+        margin-top: rem(46);
+    }
+}
+
+.p-card-list__item:hover .p-card__body, 
+.p-card-list__item:hover .p-card__info {
+    background-color: $gray;
+    color: $white;
+    transition: .3s;
+}
+
+.p-card-list__item:hover .p-card__title,
+.p-card-list__item:hover .p-card__text,
+.p-card-list__item:hover .p-card__date {
+    color: $white;
+    transition: .3s;
+}

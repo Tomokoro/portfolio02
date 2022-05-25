@@ -1,0 +1,21 @@
+@use "global" as *;
+
+
+.breadcrumbs {
+    margin-top: rem(16);
+    padding-left: $padding-sp;
+    @include mq('md') {
+        max-width: rem(1200);
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.breadcrumbs__items {
+    display: flex;
+}
+
+.breadcrumbs__item {
+    margin-left: rem(10);
+}

@@ -2,6 +2,9 @@
 
 
 .l-content {
-    padding-top: rem(50);
+    margin-top: rem(150);
+    @include mq('md') {
+        margin-top: rem(216);
+    }
 }
     

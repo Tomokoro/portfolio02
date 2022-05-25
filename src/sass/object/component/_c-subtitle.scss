@@ -1,0 +1,9 @@
+@use "global" as *;
+
+
+.c-subtitle {
+    font-size: rem(30);
+    font-weight: $bold;
+    line-height: 1;
+    letter-spacing: 0.06em;
+}

@@ -46,9 +46,29 @@
     width: 50%;
 }
 
+.p-content__img-box::before {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: $white, $alpha: 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .3s;
+    opacity: 0;
+}
+
+.p-content__img-box:hover::before {
+    opacity: 1;
+}
+
 .p-content__img {
     aspect-ratio: 168 / 188;
     width: 100%;
+    @include mq('md') {
+    aspect-ratio: 320 / 320;
+    }
 }
 
 .p-content__img img{
@@ -62,4 +82,10 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-size: rem(20);
+    text-align: center;
+    width: 100%;
+    @include mq('md') {
+        font-size: rem(25);
+    }
 }

@@ -1,0 +1,50 @@
+@use "global" as *;
+
+.p-content-contents__container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: rem(120);
+    @include mq('md') {
+        max-width: $inner;
+        padding-bottom: rem(150);
+    }
+}
+
+.p-content-contents__inner {
+    max-width: rem(400);
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: rem(85);
+    padding-left: $padding-sp;
+    padding-right: $padding-sp;
+    @include mq('md') {
+        max-width: rem(568);
+        margin-top: rem(70);
+    }
+}
+
+.p-content-contents__title {
+    font-size: rem(20);
+    font-weight: $normal;
+    line-height: 1.45;
+    letter-spacing: 0.1em;
+    text-align: center;
+    @include mq('md') {
+        font-size: rem(25);
+    }
+}
+
+.p-content-contents__description {
+    font-size: rem(16);
+    font-weight: $normal;
+    line-height: 1.45;
+    letter-spacing: 0.125em;
+    text-align: center;
+    margin-top: rem(24);
+}
+
+.p-content-contents__cards {
+    margin-top: rem(80);
+}

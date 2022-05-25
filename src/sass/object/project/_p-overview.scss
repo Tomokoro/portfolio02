@@ -30,9 +30,35 @@
     }
 }
 
+.p-overview__bg {
+    @include mq('md') {
+        background: linear-gradient(90deg, $gray 0%, $gray 70%, transparent 70%, transparent 100%);
+        padding-top: rem(80);
+        padding-bottom: rem(80);
+        margin-top: rem(48);
+        padding-right: $padding-pc;
+    }
+}
+
+.p-overview__inner {
+    @include mq('md') {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        max-width: $inner;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
 
 .p-overview__img {
     margin-top: rem(48);
+    @include mq('md') {
+        margin-top: initial;
+        max-width: rem(557);
+        width: 100%;
+    }
 }
 
 .p-overview__body {
@@ -41,20 +67,34 @@
     padding-left: $padding-sp;
     padding-right: $padding-sp;
     background-color: $gray;
+    @include mq('md') {
+        background-color: initial;
+        max-width: rem(510);
+        width: 100%;
+    }
 }
 
 .p-overview__head-wrap {
     text-align: center;
+    @include mq('md') {
+        text-align: left;
+    }
 }
 
 .p-overview__head {
     font-size: rem(20);
     line-height: 1.45;
     letter-spacing: 0.1em;
+    @include mq('md') {
+        font-size: rem(25);
+    }
 }
 
 .p-overview__text-wrap {
     margin-top: rem(24);
+    @include mq('md') {
+        margin-top: rem(48);
+    }
 }
 
 .p-overview__text {
@@ -66,4 +106,8 @@
 .p-overview__btn {
     text-align: center;
     margin-top: rem(16);
+    @include mq('md') {
+        text-align: left;
+        margin-top: rem(48);
+    }
 }

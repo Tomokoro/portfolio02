@@ -1,6 +1,11 @@
 @use "global" as *;
 
 
+
+.p-works__title-wrap {
+    text-align: center;
+}
+
 .p-works__title {
     display: inline-block;
     position: relative;
@@ -28,26 +33,100 @@
     }
 }
 
+.p-works__inner {
+    margin-top: rem(48);
+    background-color: $gray;
+    @include mq('md') {
+        display: flex;
+        justify-content: center;
+        background-color: initial;
+        max-width: $inner;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: initial;
+    }
+}
+
+.p-works__bg {
+    @include mq('md') {
+        background-color: $gray;
+        background: linear-gradient(90deg, transparent 0%, transparent 30%, $gray 30%, $gray 100%);
+        padding-top: rem(80);
+        padding-bottom: rem(80);
+        padding-left: $padding-pc;
+        margin-top: rem(48);
+    }
+}
+
+.p-works__slider {
+    @include mq('md') {
+        max-width: rem(557);
+        width: 100%;
+    }
+}
+
+.p-works .swiper02 {
+    aspect-ratio: 375 /261;
+    position: relative;
+}
+
+.p-works .slide-img {
+    width: 100%;
+    height: 100%;
+}
+
+/* ページネーションのサイズと色 */
+
+.swiper-pagination-bullets {
+    position: static;
+} 
+
+.swiper-pagination-bullet {
+    width: 8px ;
+    height: 8px ;
+    margin: 0 0 0 10px ;
+    background-color: #f9f871;
+}
+
+.swiper-pagination-bullet:first-child {
+    margin: 0 ;
+}
+
 .p-works__body {
     padding-top: rem(24);
     padding-bottom: rem(21);
     padding-left: $padding-sp;
     padding-right: $padding-sp;
-    background-color: $gray;
+    @include mq('md') {
+        text-align: left;
+        padding-left: rem(30);
+        max-width: rem(510);
+        width: 100%;
+    }
 }
 
 .p-works__head-wrap {
     text-align: center;
+    @include mq('md') {
+        text-align: left;
+    }
 }
 
 .p-works__head {
     font-size: rem(20);
     line-height: 1.45;
     letter-spacing: 0.1em;
+    @include mq('md') {
+        font-size: rem(25);
+    }
 }
 
 .p-works__text-wrap {
     margin-top: rem(24);
+    @include mq('md') {
+    margin-top: rem(48);
+    }
 }
 
 .p-works__text {
@@ -59,4 +138,8 @@
 .p-works__btn {
     text-align: center;
     margin-top: rem(16);
+    @include mq('md') {
+        text-align: left;
+        margin-top: rem(48);
+    }
 }

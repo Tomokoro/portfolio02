@@ -2,11 +2,9 @@
 
 
 .l-news {
-    padding-top: rem(25);
-    padding-bottom: rem(100);
+    margin-top: rem(50);
     @include mq('md') {
-        padding-top: rem(30);
-        padding-bottom: rem(172);
+        // margin-top: rem(30);
     }
 }
 

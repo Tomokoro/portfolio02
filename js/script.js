@@ -48,7 +48,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   });
 
   // メインビュースライダー
-const swiper = new Swiper('.swiper', {
+const swiper01 = new Swiper('.swiper01', {
     loop: true,
     effect: "fade", //フェードの指定
         autoplay: {
@@ -61,6 +61,25 @@ const swiper = new Swiper('.swiper', {
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',
       }
+    });
+
+  // 制作実績スライダー
+const swiper02 = new Swiper('.swiper02', {
+    loop: true,
+      autoplay: {
+        delay: 3000, //3秒後に次のスライドへ
+        // disableOnInteraction: false //ユーザー側で操作してもスライドを止めない
+      },
+      speed: 2000, //２秒かけてフェードで切り替わる
+      pagination: { // 丸のページネーションを使うなら書く
+        el: ".swiper-pagination",
+        clickable: true //クリックを有効化する
+      },
+      navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+      }
+      
     });
 
 });

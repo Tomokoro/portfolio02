@@ -37,16 +37,30 @@
     font-size: rem(16);
     line-height: 1.4375;
     text-align: center;  
+    position: relative;
+}
+
+.p-footer__item::before {
+    display: inline-block;
+    content:"";
+    width: 70%;
+    height: 1px;
+    background-color: $lightyellow;
+    position: absolute;
+    bottom: rem(-4);
+    left: rem(15);
+    transition: .3s;
+    opacity: 0;
+}
+
+.p-footer__item a{
+    display: inline-block;
     padding-top: rem(4);
     padding-bottom: rem(4);
     @include mq('md'){
         padding-left: rem(16);
         padding-right: rem(16);
     }
-}
-
-.p-footer__item a{
-    display: block;
 }
 
 .p-footer__copyright {
@@ -58,4 +72,8 @@
     color: $white;
     font-size: rem(11);
     line-height: 1.4545;
+}
+
+.p-footer__item:hover::before{
+    opacity: 1;
 }

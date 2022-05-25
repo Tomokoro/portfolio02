@@ -30,7 +30,30 @@
     }
 }
 
+.p-blog__inner {
+    padding-left: $padding-sp;
+    padding-right: $padding-sp;
+    margin-top: rem(64);
+    @include mq('md') {
+        margin-top: rem(48);
+        max-width: $inner;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.p-blog__items {
+    @include mq('md') {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
 .p-blog__btn {
     margin-top: rem(24);
     text-align: center;
+    @include mq('md') {
+        margin-top: rem(48);
+    }
 }
