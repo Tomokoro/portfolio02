@@ -1,0 +1,101 @@
+@use "global" as *;
+
+
+.p-contact-form__attention {
+    color:  #FF5757;
+    font-size: rem(16);
+    font-weight: $normal;
+    line-height: 1.5;
+    letter-spacing: 0.125em;
+    text-align: center;
+} 
+
+.p-contact-form__item:first-child .p-contact-form__input{
+    background-color: #FFDCDC;
+}
+
+.p-contact-form__inner {
+    padding-left: $padding-sp;
+    padding-right: $padding-sp;
+    padding-bottom: rem(120);
+    @include mq('md') {
+        padding-left: $padding-pc;
+        padding-right: $padding-pc;
+        padding-bottom: rem(150);
+    }
+}
+
+.p-contact-form__table {
+    max-width: 570px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    @include mq('md') {
+        max-width: 650px;
+    }
+    @include mq('lg') {
+        max-width: 698px;
+    }
+}
+
+.p-contact-form__item {
+    width: 100%;
+    @include mq('md') {
+        max-width: rem(698);
+        display: flex;
+        justify-content: flex-end;
+        margin-top: rem(45);
+    }
+}
+
+.p-contact-form__head {
+    margin-top: rem(32);
+    font-size: rem(14);
+    font-weight: $normal;
+    line-height: 1.8571;
+    letter-spacing: 0.05em;
+    @include mq('md') {
+        margin-top: initial;
+    }
+}
+
+.p-contact-form__input {
+    display: inline-block;
+    background-color: $white;
+    max-width: rem(540);
+    width: 100%;
+    font-size: rem(14);
+    font-weight: $normal;
+    line-height: 1.8571;
+    letter-spacing: 0.05em;
+    padding: rem(9);
+    margin-top: rem(16);
+    @include mq('md') {
+        margin-top: initial;
+        margin-left: rem(20);
+    }
+}
+
+.p-contact-form__textarea {
+    background-color: $white;
+    max-width: rem(540);
+    width: 100%;
+    font-size: rem(14);
+    font-weight: $normal;
+    line-height: 1.8571;
+    letter-spacing: 0.05em;
+    padding: rem(9);
+    margin-top: rem(16);
+    @include mq('md') {
+        margin-top: initial;
+        margin-left: rem(24);
+    }
+}
+
+.p-contact-form__btn {
+    margin-top: rem(48);
+    text-align: center;
+    @include mq('md') {
+        margin-top: rem(56);
+    }
+}

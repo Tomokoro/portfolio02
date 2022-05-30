@@ -1,0 +1,40 @@
+@use "global" as *;
+
+
+.p-overview-table__items {
+    border-bottom: 1px solid $white;
+    display: flex;
+    align-items: center;
+    padding-top: rem(14);
+    padding-bottom: rem(19);
+    @include mq('md') {
+        padding-top: rem(30);
+        padding-bottom: rem(28);
+    }
+}
+
+.p-overview-table__head {
+    width: 30%;
+    font-size: rem(13);
+    font-weight: $normal;
+    line-height: 1.6154;
+    letter-spacing: 0.0625em;
+    @include mq('md') {
+        width: 15%;
+        font-size: rem(16);
+        line-height: 1.5;
+    }
+}
+
+.p-overview-table__description {
+    width: 70%;
+    font-size: rem(13);
+    font-weight: $normal;
+    line-height: 1.6154;
+    letter-spacing: 0.0625em;
+    @include mq('md') {
+        width: 85%;
+        font-size: rem(16);
+        line-height: 1.5;
+    }
+}

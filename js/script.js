@@ -82,6 +82,33 @@ const swiper02 = new Swiper('.swiper02', {
       
     });
 
+
+    // サムネイル
+const sliderThumbnail = new Swiper(".slider-thumbnail", {
+  slidesPerView: 2.8, // サムネイルの枚数
+  spaceBetween: 24,
+  centeredSlides : true,
+  loop: true,
+  breakpoints: {
+    768: {
+      slidesPerView: 8,
+      spaceBetween: 8,
+      centeredSlides : false,
+    }
+  }
+});
+// スライダー
+const slider = new Swiper(".slider", {
+  loop: true,
+  // 前後の矢印
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  thumbs: {
+    swiper: sliderThumbnail,
+  },
+});
 });
 
 

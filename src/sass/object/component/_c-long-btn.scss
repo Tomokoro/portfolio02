@@ -1,0 +1,22 @@
+@use "global" as *;
+
+
+.c-long-btn {
+    display: inline-block;
+    font-size: rem(20);
+    font-weight: $normal;
+    line-height: 1.45;
+    letter-spacing: 0.01em;
+    padding-top: rem(11);
+    padding-bottom: rem(11);
+    background-color: $gray;
+    border: 1px solid $white;
+    text-align: center;
+    width: 100%;
+    @include mq('md') {
+        padding-top: rem(16);
+        padding-bottom: rem(16);
+        max-width: $inner;
+        font-size: rem(16);
+    }
+}

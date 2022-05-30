@@ -1,0 +1,36 @@
+@use "global" as *;
+
+
+.p-contact-thanks__inner {
+    text-align: center;
+    padding-left: $padding-sp;
+    padding-right: $padding-sp;
+    padding-bottom: rem(120);
+    @include mq('md') {
+        padding-left: $padding-pc;
+        padding-right: $padding-pc;
+        padding-bottom: rem(150);
+    }
+}
+
+.p-contact-thanks__title,
+.p-contact-thanks__text {
+    font-size: rem(20);
+    font-weight: $normal;
+    line-height: 1.5;
+    letter-spacing: 0.1em;
+    @include mq('md') {
+        font-size: rem(30);
+        line-height: 1.17;
+        letter-spacing: 0.06em;
+    }
+}
+
+.p-contact-thanks__text,
+.p-contact-thanks__btn {
+    margin-top: rem(80);
+}
+
+.p-contact-thanks__btn .c-back-btn{
+    text-transform: uppercase;
+}

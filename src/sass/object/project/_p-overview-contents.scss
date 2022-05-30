@@ -1,0 +1,36 @@
+@use "global" as *;
+
+
+.p-overview-contents__inner {
+    padding-left: $padding-sp;
+    padding-right: $padding-sp;
+    padding-bottom: rem(120);
+    max-width: rem(650);
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    @include mq('md') {
+        padding-bottom: rem(150);
+        max-width: $inner;
+    }
+}
+
+.p-overview-contents__map {
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    margin-top: rem(120);
+    width: 100vw;
+    aspect-ratio: 375 / 300;
+    @include mq('md') {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: rem(80);
+        width: 100%;
+        aspect-ratio: 1100 / 367;
+    }
+}
+
+.p-overview-contents__map iframe{
+    width: 100%;
+    height: 100%;
+}
