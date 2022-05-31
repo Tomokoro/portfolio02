@@ -1,0 +1,11 @@
+@use "global" as *;
+
+
+.c-arrow {
+    width: 16px;
+    height: 16px;
+    border-top: 3px solid $gray;
+    border-right: 3px solid $gray;
+    transform: rotate(-45deg);
+    margin-top: rem(5);
+}

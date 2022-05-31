@@ -25,11 +25,12 @@
     position: absolute;
     top: rem(-47);
     left: rem(-40);
-    z-index: 1;
+    z-index: -1;
     @include mq('md') {
         font-size: rem(110);
-        top: rem(-94);
-        left: rem(-470);
+        top: rem(-50);
+        left: rem(270);
+        padding-right: $padding-pc;
     }
 }
 

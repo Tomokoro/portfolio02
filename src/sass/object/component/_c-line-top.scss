@@ -1,0 +1,33 @@
+@use "global" as *;
+
+
+.c-line-top {
+    position: absolute;
+    content: "";
+    top: rem(-30);
+    left: 0;
+    width: 100%;
+    height: rem(1200);
+    z-index: -9999;
+    background-color: $yellow;
+    clip-path: polygon(0 0.9%,  100% 70.5%, 100% 70.6%, 0 1%);
+    @include mq("md") {
+        width: 78.125%;
+        height: rem(1000);
+        top: rem(-129);
+        clip-path: polygon(0 0.9%,  100% 99.9%, 99.9% 100%, 0 1%);
+
+    }
+}
+
+.c-line-bottom {
+    position: absolute;
+    content: "";
+    width: 94.6094%;
+    height: rem(1300);
+    top: rem(-213);
+    left: 0;
+    z-index: -9999;
+    background-color: $yellow;
+    clip-path: polygon(99.9% 0, 100% 0.01%,  0.01% 100%, 0 99.9%);
+}
